@@ -1,0 +1,132 @@
+.posts {
+  display: grid;
+  grid-row-gap: 16px;
+}
+
+@media screen and (max-width: 800px) {
+  .nav {
+    z-index: 10;
+    background-color: #fff;
+    width: 100%;
+    position: absolute;
+
+    /* This trasform moves the drawer off canvas. */
+    -webkit-transform: translate(-100%, 0);
+    transform: translate(-100%x, 0);
+
+    /* Optionally, we animate the drawer. */
+    transition: transform 0.3s ease;
+  }
+
+  .open {
+    -webkit-transform: translate(0, 0);
+    transform: translate(0, 0);
+  }
+
+  .nav-item {
+    display: list-item;
+    border-bottom: 1px solid #e0e0e0;
+    width: 100%;
+    text-align: left;
+  }
+
+  .app-title {
+    font-size: 1.5em;
+  }
+
+  .detail {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .hero {
+    background-image: url(../public/images/heros/hero-image_4-small.jpg);
+  }
+}
+
+@media screen and (min-width: 650px) {
+  .post-item-content {
+    padding: 16px 32px 32px 32px;
+  }
+
+  .post-item-title {
+    font-size: 18px;
+  }
+
+  .post-item-description {
+    font-size: 14px;
+  }
+}
+
+@media screen and (min-width: 651px) {
+  .hero {
+    background-image: url(../public/images/heros/hero-image_4-large.jpg);
+  }
+}
+
+@media screen and (min-width: 700px) {
+  .posts {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 10px;
+    grid-row-gap: 16px;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .header-menu {
+    display: none;
+  }
+
+  .nav-list {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+  .app-bar {
+    display: flex;
+  }
+
+  .app-title {
+    width: 75%;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .posts {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .app-bar {
+    display: flex;
+  }
+
+  .app-title {
+    width: 75%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  main {
+    max-width: 1200px;
+  }
+
+  .app-bar {
+    display: flex;
+    width: 100%;
+  }
+
+  .app-title {
+    width: 75%;
+  }
+
+  .nav {
+    width: 100%;
+  }
+
+  .hero {
+    min-width: 1000px;
+  }
+}
