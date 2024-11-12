@@ -13,7 +13,7 @@
     "build-image": "node sharp.js"
   },
   "keywords": [],
-  "author": "Andira Yovi Setiawan<rifqiyovi21@gmail.com>",
+  "author": "Andira Yovi Setiawan<andirayov21@gmail.com>",
   "license": "ISC",
   "devDependencies": {
     "@babel/core": "^7.21.4",

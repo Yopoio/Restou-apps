@@ -3,7 +3,7 @@ const assert = require('assert');
 Feature('Liking Restaurants');
 
 Before(({ I }) => {
-  I.amOnPage('/#/favorite');
+  I.amOnPage('/#/favorite');``````````````````````````````````````````````````````````````````
 });
 
 Scenario('showing empty liked restaurants', ({ I }) => {
